@@ -1,40 +1,49 @@
-### Documentation de l'API Calendrier
-# Introduction
+# DOCUMENTATION API CALENDRIER
+
+## Introduction
+
 Cette API vous permet d'obtenir une liste formatée des jours d'un mois spécifique d'une année donnée.
 
-# Installation
+### Pré-requis
+
+Assurez-vous d'avoir pip d'installé et à jour avant de procéder à l'installation.
+
+### Installation
+
 Pour installer cette API, utilisez la commande pip suivante :
+``pip install chemin/acces/mon_calendrier-0.1.tar.gz``
 
-bash
-Copy code
-`pip install nom_de_lapi`
-Assurez-vous d'avoir pip installé et à jour avant de procéder à l'installation.
+## Comment utiliser l'API dans votre projet
 
-# Comment utiliser l'API dans votre projet
 Après avoir installé l'API via pip, vous pouvez simplement l'importer dans votre projet et commencer à l'utiliser.
+``from calendrier.calendrier import Calendrier``
 
-# Fonctionnalités
-Méthode get_days_of_month_formatted
+## Fonctionnalité
+# Fonction get_days_of_month_formatted
 Cette méthode statique vous permet d'obtenir une liste formatée des jours d'un mois spécifique d'une année donnée.
+``def get_days_of_month_formatted(year: int, month: int) -> list:
+    ...``
+# Paramètres
+*year : L'année pour laquelle vous souhaitez obtenir les jours. (Type : int)
+*month : Le mois pour lequel vous souhaitez obtenir les jours. (Type : int)
 
-Signature de la méthode :
+# Retour
+La fonction renvoie une liste de chaînes de caractères formatées représentant chaque jour du mois spécifié.
 
-python
-Copy code
-`def get_days_of_month_formatted(year: int, month: int) -> list:
-    ...`
-Paramètres :
+# Exemple d'utilisation
+``days = Calendrier.get_days_of_month_formatted(2023, 10)
+print(days)``
+Cette exemple renverra une liste des jours de octobre 2023 dans ce format :
+``Sunday 01 October 2023
+...``
 
-year : L'année pour laquelle vous souhaitez obtenir les jours. (Type : int)
-month : Le mois pour lequel vous souhaitez obtenir les jours. (Type : int)
-Retour :
+## Contributing
 
-La méthode renvoie une liste de chaînes de caractères formatées représentant chaque jour du mois spécifié.
+Si vous souhaitez contribuer, lisez le fichier [CONTRIBUTING.md](https://example.org) pour savoir comment le faire.
 
-# Exemple d'utilisation :
+## Versions
+**Version :** 1.0
 
-python
-Copy code
-`days = Calendrier.get_days_of_month_formatted(2023, 10)`
-`print(days)`
-Cet exemple renverra une liste des jours de octobre 2023 formatée.
+## Auteur
+* **Adrien Berard**
+
