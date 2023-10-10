@@ -7,7 +7,7 @@ Pour installer cette API, utilisez la commande pip suivante :
 
 bash
 Copy code
-pip install nom_de_lapi
+`pip install nom_de_lapi`
 Assurez-vous d'avoir pip installé et à jour avant de procéder à l'installation.
 
 # Comment utiliser l'API dans votre projet
@@ -21,8 +21,8 @@ Signature de la méthode :
 
 python
 Copy code
-def get_days_of_month_formatted(year: int, month: int) -> list:
-    ...
+`def get_days_of_month_formatted(year: int, month: int) -> list:
+    ...`
 Paramètres :
 
 year : L'année pour laquelle vous souhaitez obtenir les jours. (Type : int)
@@ -35,6 +35,6 @@ La méthode renvoie une liste de chaînes de caractères formatées représentan
 
 python
 Copy code
-days = Calendrier.get_days_of_month_formatted(2023, 10)
-print(days)
+`days = Calendrier.get_days_of_month_formatted(2023, 10)`
+`print(days)`
 Cet exemple renverra une liste des jours de octobre 2023 formatée.
