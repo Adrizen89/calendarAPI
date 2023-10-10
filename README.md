@@ -19,27 +19,23 @@ Après avoir installé l'API via pip, vous pouvez simplement l'importer dans vot
 <br>``from calendrier.calendrier import Calendrier``
 
 ## Fonctionnalité
-# Fonction get_days_of_month_formatted
-Cette méthode statique vous permet d'obtenir une liste formatée des jours d'un mois spécifique d'une année donnée.
+### Fonction get_days_of_month_formatted
+Cette méthode statique vous permet d'obtenir une liste formatée des jours d'un mois spécifique d'une année donnée.  
 ``def get_days_of_month_formatted(year: int, month: int) -> list:
     ...``
-# Paramètres
+### Paramètres
 *year : L'année pour laquelle vous souhaitez obtenir les jours. (Type : int)
 *month : Le mois pour lequel vous souhaitez obtenir les jours. (Type : int)
 
-# Retour
+### Retour
 La fonction renvoie une liste de chaînes de caractères formatées représentant chaque jour du mois spécifié.
 
-# Exemple d'utilisation
+### Exemple d'utilisation
 ``days = Calendrier.get_days_of_month_formatted(2023, 10)
 print(days)``
 Cette exemple renverra une liste des jours de octobre 2023 dans ce format :
 ``Sunday 01 October 2023
 ...``
-
-## Contributing
-
-Si vous souhaitez contribuer, lisez le fichier [CONTRIBUTING.md](https://example.org) pour savoir comment le faire.
 
 ## Versions
 **Version :** 1.0
