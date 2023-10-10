@@ -16,7 +16,7 @@ Pour installer cette API, utilisez la commande pip suivante :
 ## Comment utiliser l'API dans votre projet
 
 Après avoir installé l'API via pip, vous pouvez simplement l'importer dans votre projet et commencer à l'utiliser.
-``from calendrier.calendrier import Calendrier``
+<br>``from calendrier.calendrier import Calendrier``
 
 ## Fonctionnalité
 # Fonction get_days_of_month_formatted
