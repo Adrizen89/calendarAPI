@@ -24,8 +24,8 @@ Cette méthode statique vous permet d'obtenir une liste formatée des jours d'un
 ``def get_days_of_month_formatted(year: int, month: int) -> list:  
   ...``
 ### Paramètres
-*year : L'année pour laquelle vous souhaitez obtenir les jours. (Type : int)
-*month : Le mois pour lequel vous souhaitez obtenir les jours. (Type : int)
+* year : L'année pour laquelle vous souhaitez obtenir les jours. (Type : int)
+* month : Le mois pour lequel vous souhaitez obtenir les jours. (Type : int)
 
 ### Retour
 La fonction renvoie une liste de chaînes de caractères formatées représentant chaque jour du mois spécifié.
